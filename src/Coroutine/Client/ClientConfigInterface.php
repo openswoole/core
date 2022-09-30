@@ -8,10 +8,6 @@ declare(strict_types=1);
  */
 namespace OpenSwoole\Core\Coroutine\Client;
 
-final class PDOClientFactory implements ClientFactoryInterface
+interface ClientConfigInterface
 {
-    public static function make($config)
-    {
-        return new PDOClient($config);
-    }
 }
