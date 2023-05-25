@@ -85,8 +85,7 @@ class ClientPool
                 continue;
             }
             if (!$this->pool->isEmpty()) {
-                $client = $this->pool->pop();
-                $client->close();
+                $this->pool->pop();
             } else {
                 break;
             }
